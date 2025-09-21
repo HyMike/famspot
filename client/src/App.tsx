@@ -33,9 +33,7 @@ function App() {
 
   return (
     <div className="app">
-      Hero Section
-     
-
+  
       {/* Features Section */}
       {/* <section className="features">
         <div className="container">
@@ -97,17 +95,6 @@ function App() {
           </div>
         </div>
       </section>
-            {/* <Carousel /> */}
-            {/* <div className="signup-text">
-              <h2>Ready to Get Started?</h2>
-              <p>Join our community today and discover amazing activities for your child. It's free to sign up and takes less than 2 minutes!</p>
-              <ul className="benefits-list">
-                <li>✓ Access to hundreds of local activities</li>
-                <li>✓ Age-appropriate recommendations</li>
-                <li>✓ Connect with other families</li>
-                <li>✓ Safe, vetted instructors and locations</li>
-              </ul>
-            </div> */}
             
             <div className="signup-form-container">
               {!isSubmitted ? (
