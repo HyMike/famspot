@@ -34,32 +34,7 @@ function App() {
   return (
     <div className="app">
       Hero Section
-      <section className="hero">
-        <div className="hero-content">
-          <h1 className="hero-title">
-            Give Your Child the Best Start in Life
-          </h1>
-          <p className="hero-subtitle">
-            Join thousands of parents who trust FamSpot to provide safe, educational, 
-            and fun activities for their children. From toddlers to elementary school, 
-            we've got your family covered.
-          </p>
-          <div className="hero-stats">
-            <div className="stat">
-              <span className="stat-number">10,000+</span>
-              <span className="stat-label">Happy Families</span>
-            </div>
-            <div className="stat">
-              <span className="stat-number">500+</span>
-              <span className="stat-label">Activities</span>
-            </div>
-            <div className="stat">
-              <span className="stat-number">50+</span>
-              <span className="stat-label">Cities</span>
-            </div>
-          </div>
-        </div>
-      </section>
+     
 
       {/* Features Section */}
       {/* <section className="features">
@@ -90,33 +65,39 @@ function App() {
         </div>
       </section> */}
 
-      {/* Testimonials Section */}
-      {/* <section className="testimonials">
-        <div className="container">
-          <h2 className="section-title">What Parents Are Saying</h2>
-          <div className="testimonials-grid">
-            <div className="testimonial">
-              <p>"FamSpot has been a game-changer for our family. My 4-year-old loves the activities and I love knowing he's safe and learning."</p>
-              <div className="testimonial-author">- Sarah M., Mom of 2</div>
-            </div>
-            <div className="testimonial">
-              <p>"Finally, a platform that understands what parents need. The age-appropriate activities are perfect for my elementary school kids."</p>
-              <div className="testimonial-author">- Michael R., Dad of 3</div>
-            </div>
-            <div className="testimonial">
-              <p>"The local focus is amazing. We've met so many great families in our area through FamSpot activities."</p>
-              <div className="testimonial-author">- Jennifer L., Mom of 1</div>
-            </div>
-          </div>
-        </div>
-      </section> */}
+  
 
       {/* Signup Section */}
       <section className="signup-section">
         <div className="container">
           <div className="signup-content">
-
-            <Carousel />
+          <section className="hero">
+        <div className="hero-content">
+          <h1 className="hero-title">
+            Give Your Child the Best Start in Life
+          </h1>
+          <p className="hero-subtitle">
+            Join thousands of parents who trust FamSpot to provide safe, educational, 
+            and fun activities for their children. From toddlers to elementary school, 
+            we've got your family covered.
+          </p>
+          <div className="hero-stats">
+            <div className="stat">  
+              <span className="stat-number">10,000+</span>
+              <span className="stat-label">Happy Families</span>
+            </div>
+            <div className="stat">
+              <span className="stat-number">500+</span>
+              <span className="stat-label">Activities</span>
+            </div>
+            <div className="stat">
+              <span className="stat-number">50+</span>
+              <span className="stat-label">Cities</span>
+            </div>
+          </div>
+        </div>
+      </section>
+            {/* <Carousel /> */}
             {/* <div className="signup-text">
               <h2>Ready to Get Started?</h2>
               <p>Join our community today and discover amazing activities for your child. It's free to sign up and takes less than 2 minutes!</p>
@@ -205,6 +186,28 @@ function App() {
         </div>
       </section>
 
+          {/* Testimonials Section */}
+          <section className="testimonials">
+        <div className="container">
+          <h2 className="section-title">What Parents Are Saying</h2>
+          <div className="testimonials-grid">
+            <div className="testimonial">
+              <p>"FamSpot has been a game-changer for our family. My 4-year-old loves the activities and I love knowing he's safe and learning."</p>
+              <div className="testimonial-author">- Sarah M., Mom of 2</div>
+            </div>
+            <div className="testimonial">
+              <p>"Finally, a platform that understands what parents need. The age-appropriate activities are perfect for my elementary school kids."</p>
+              <div className="testimonial-author">- Michael R., Dad of 3</div>
+            </div>
+            <div className="testimonial">
+              <p>"The local focus is amazing. We've met so many great families in our area through FamSpot activities."</p>
+              <div className="testimonial-author">- Jennifer L., Mom of 1</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+  
       {/* Footer */}
       <footer className="footer">
         <div className="container">

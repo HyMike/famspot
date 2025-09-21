@@ -8,7 +8,7 @@ export const Carousel = () => {
         {
         title: "Ready to Get Started?",
         content: "Join our community today and discover amazing activities for your child. It's free to sign up and takes less than 2 minutes!",
-        img: "/images/kids.jpg",
+        img: "/images/pumpkin_patch.jpg",
       },
       {
         title: "Why Parents Love FamSpot",
@@ -36,14 +36,17 @@ export const Carousel = () => {
     }
 
 
-    const currentSlideData = slides[currentSlide]; 
+    // const currentSlideData = slides[currentSlide]; 
+    const currentSlideData = slides[0]; 
+
   
     return (
       <div className="carousel-container">
       <div className="carousel-slide">
-        <h2 className="carousel-title">{currentSlideData.title}</h2>
-        <p className="carousel-content">{currentSlideData.content}</p>
         <img className="carousel-img" src={currentSlideData.img} /> 
+        <h3 className="carousel-title">Get Suggestions Like These...</h3>
+        {/* <p className="carousel-content">{currentSlideData.content}</p> */}
+
       </div>
       
       <div className="carousel-indicators">
