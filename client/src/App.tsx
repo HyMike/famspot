@@ -1,18 +1,23 @@
 import { useState } from 'react'
 import './App.css'
-import { Carousel } from './components/carousel'
+import api from "../src/services/api";
+
 
 interface SignupFormData {
   name: string
+  email: string
   zipCode: string
   ageRange: string
+
 }
 
 function App() {
   const [formData, setFormData] = useState<SignupFormData>({
     name: '',
     zipCode: '',
-    ageRange: ''
+    ageRange: '',
+    email: "",
+    
   })
   const [isSubmitted, setIsSubmitted] = useState(false)
 
@@ -24,9 +29,9 @@ function App() {
     }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Here you would typically send the data to your backend
+    api.post("/users/signup", formData);
     console.log('Form submitted:', formData)
     setIsSubmitted(true)
   }
@@ -110,6 +115,22 @@ function App() {
                       onChange={handleInputChange}
                       required
                       placeholder="Enter your full name"
+                    />
+                  </div>
+
+                  <div className="form-group">
+                    <label htmlFor="email">Email</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      required
+                      placeholder="Enter your Email"
+                      title="Please enter a Email"
+                      autoComplete="email"
+                      inputMode="email"
                     />
                   </div>
                   
