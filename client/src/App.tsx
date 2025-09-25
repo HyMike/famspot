@@ -32,7 +32,6 @@ function App() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     api.post("/users/signup", formData);
-    console.log('Form submitted:', formData)
     setIsSubmitted(true)
   }
 
@@ -182,7 +181,7 @@ function App() {
                     className="submit-btn"
                     onClick={() => {
                       setIsSubmitted(false)
-                      setFormData({ name: '', zipCode: '', ageRange: '' })
+                      setFormData({ name: '', zipCode: '', ageRange: '', email: '' })
                     }}
                   >
                     Sign Up Another Family

@@ -7,8 +7,9 @@ export const createUser = async (req: Request, res: Response) => {
 
     try { 
         const userData: UserData = { ...req.body };
-
+        
         const newUser = await createAccount(userData);
+        
 
     } catch (error) {
         console.error;
