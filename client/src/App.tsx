@@ -158,9 +158,9 @@ function App() {
                       required
                     >
                       <option value="">Select age range</option>
-                      <option value="toddler">Toddler (0-3 years)</option>
-                      <option value="preschool">Preschool (3-5 years)</option>
-                      <option value="elementary">Elementary (5-10 years)</option>
+                      <option value="Toddler (0-3 years)">Toddler (0-3 years)</option>
+                      <option value="Preschool (3-5 years)">Preschool (3-5 years)</option>
+                      <option value="Elementary (5-10 years)">Elementary (5-10 years)</option>
                     </select>
                   </div>
                   
