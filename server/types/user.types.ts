@@ -4,3 +4,9 @@ export interface UserData {
     zipCode: string,
     ageRange: string
 }
+
+export interface UserPromptData {
+    id: number,
+    zipCode: string, 
+    ageRange: string
+}

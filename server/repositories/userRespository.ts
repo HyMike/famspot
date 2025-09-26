@@ -19,3 +19,27 @@ export const createUser = async (userData: UserData) => {
     }
  
 }
+
+export const getAllUsers = async () => {
+    try {
+
+        const sql = `
+        SELECT 
+        id, 
+        name, 
+        email, 
+        zip_code AS "zipCode", 
+        age_range AS "ageRange", 
+        created_at AS "createdAt"
+        FROM users
+        `;
+        const allUsers = await query(sql);
+        return allUsers; 
+        
+    } catch (error){
+        console.error("Error fetching users:", error);
+
+    }
+}
+
+
